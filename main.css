@@ -1,0 +1,272 @@
+:root {
+  --pink: #ff1493;
+  --blue: #1493ff;
+  --gray: #212121;
+  --white: #fff;
+
+  --c1: var(--pink);
+  --c2: var(--blue);
+  --c3: var(--gray);
+  --c4: var(--white);
+
+  --base-font-size: 2rem;
+  --base-line-height: 1.3;
+
+  --font-size-title: 7.2rem;
+  --font-size-subtitle: 2.4rem;
+
+  --source-sans-pro: "Source Sans Pro", sans-serif;
+  --source-code-pro: "Source Code Pro", monospace;
+
+  --socialbar-icon-size: 6.4rem;
+  --socialbar-font-size: 3.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  :root {
+    --font-size-title: 9.6rem;
+
+    --socialbar-icon-size: 7.2rem;
+    --socialbar-font-size: 4.2rem;
+  }
+}
+
+/* keyframes */
+
+@keyframes fade-in-down {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* box-sizing */
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+/* selection */
+
+*::selection {
+  background-color: rgba(255, 20, 147, 0.5);
+}
+
+img::selection {
+  background: none;
+}
+
+/* basic elements */
+
+html, body {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+  overflow-y: auto;
+  font-size: 62.5%;
+  color: var(--c4);
+  background-color: var(--c3);
+}
+
+body {
+  font-family: var(--source-sans-pro);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  min-height: 100%;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a:focus {
+  outline: none;
+}
+
+/* tabbar */
+
+.tabbar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+}
+
+.tab {
+  flex-grow: 1;
+  background: none;
+  border: none;
+  color: var(--c4);
+}
+
+.tab:focus {
+  outline: none;
+}
+
+/* page */
+
+.page, .page__inner {
+  width: 100%;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.page__inner {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* app */
+
+.title, .subtitle {
+  text-align: center;
+}
+
+.title {
+  font-size: var(--font-size-title);
+  line-height: 1;
+  color: var(--c1);
+  animation-name: fade-in-down;
+  animation-duration: 0.8s;
+  animation-delay: 0.4s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+  font-size: var(--font-size-subtitle);
+  font-family: var(--source-code-pro);
+  animation-name: fade-in;
+  animation-duration: 0.8s;
+  animation-delay: 1.2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.tag {
+  margin-right: 0.25em;
+  margin-left: 0.25em;
+}
+
+.tag::before {
+  content: "#";
+  color: var(--c1);
+}
+
+/* socialbar */
+
+.socialbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  font-size: var(--socialbar-font-size);
+  line-height: 1;
+  animation-name: fade-in-up;
+  animation-duration: 0.8s;
+  animation-delay: 0.8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.socialbar__item {
+  margin-right: 0.4rem;
+  margin-left: 0.4rem;
+}
+
+.socialbar__link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--socialbar-icon-size);
+  height: var(--socialbar-icon-size);
+  color: var(--c4);
+  transition: all 0.3s ease;
+  border: 0.2rem solid var(--c4);
+  border-radius: 50%;
+  will-change: transform, color, border;
+  backface-visibility: hidden;
+  transform-origin: center center;
+  transform: scale(0.9);
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+.socialbar__link::before {
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  display: block;
+  padding: 0.4rem 0.6rem;
+  font-family: var(--source-code-pro);
+  content: attr(data-channel-name);
+  font-size: 1.8rem;
+  visibility: hidden;
+  opacity: 0;
+  color: var(--c3);
+  background-color: var(--c4);
+  transition: all 0.3s ease, visibility 0s 0.3s ease;
+}
+
+.socialbar__link,
+.socialbar__link:active,
+.socialbar__link:focus,
+.socialbar__link:hover {
+  text-decoration: none;
+}
+
+.socialbar__link:active,
+.socialbar__link:focus,
+.socialbar__link:hover {
+  color: var(--c1);
+  border-color: var(--c1);
+  transform: scale(1);
+}
+
+.socialbar__link:active::before,
+.socialbar__link:focus::before,
+.socialbar__link:hover::before {
+  background-color: var(--c1);
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
