@@ -145,8 +145,15 @@ a:focus {
 }
 
 .page__inner {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .page__inner {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
 
 /* app */
@@ -156,6 +163,7 @@ a:focus {
 }
 
 .title {
+  margin-top: 0;
   font-size: var(--font-size-title);
   line-height: 1;
   color: var(--c1);
@@ -199,6 +207,7 @@ a:focus {
   justify-content: center;
   list-style: none;
   padding-left: 0;
+  margin-bottom: 0;
   font-size: var(--socialbar-font-size);
   line-height: 1;
   animation-name: fade-in-up;
