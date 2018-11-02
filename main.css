@@ -244,6 +244,7 @@ a:focus {
 .socialbar__link::before {
   position: absolute;
   top: calc(100% + 0.6rem);
+  z-index: 1;
   display: block;
   padding: 0.4rem 0.6rem;
   font-family: var(--source-code-pro);
@@ -266,6 +267,7 @@ a:focus {
 .socialbar__link:active,
 .socialbar__link:focus,
 .socialbar__link:hover {
+  z-index: 1;
   color: var(--c1);
   border-color: var(--c1);
   transform: scale(1);
