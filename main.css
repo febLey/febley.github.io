@@ -264,7 +264,6 @@ a:focus {
   text-decoration: none;
 }
 
-.socialbar__link:active,
 .socialbar__link:focus,
 .socialbar__link:hover {
   z-index: 1;
@@ -273,7 +272,6 @@ a:focus {
   transform: scale(1);
 }
 
-.socialbar__link:active::before,
 .socialbar__link:focus::before,
 .socialbar__link:hover::before {
   background-color: var(--c1);
