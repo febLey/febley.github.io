@@ -22,12 +22,12 @@ const channels = [
     icon: 'fab fa-telegram-plane'
   },
   {
-    name: 'PSN',
+    name: 'PlayStation',
     url: 'https://psnprofiles.com/febLey',
     icon: 'fab fa-playstation'
   },
   {
-    name: 'XBL',
+    name: 'Xbox',
     url: 'https://exophase.com/xbox/user/febLey/',
     icon: 'fab fa-xbox'
   },
