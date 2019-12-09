@@ -22,6 +22,11 @@ const channels = [
     icon: 'fab fa-telegram-plane'
   },
   {
+    name: 'WaniKani',
+    url: 'https://www.wanikani.com/users/febLey',
+    icon: 'fas fa-language'
+  },
+  {
     name: 'PlayStation',
     url: 'https://psnprofiles.com/febLey',
     icon: 'fab fa-playstation'
