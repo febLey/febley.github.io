@@ -27,14 +27,14 @@ const channels = [
     icon: 'fab fa-playstation'
   },
   {
-    name: 'Xbox',
-    url: 'https://exophase.com/xbox/user/febLey/',
-    icon: 'fab fa-xbox'
-  },
-  {
     name: 'Steam',
     url: 'https://steamcommunity.com/id/febLey',
     icon: 'fab fa-steam'
+  },
+  {
+    name: 'Xbox',
+    url: 'https://exophase.com/xbox/user/febLey/',
+    icon: 'fab fa-xbox'
   }
 ]
 
