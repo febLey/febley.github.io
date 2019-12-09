@@ -20,6 +20,21 @@ const channels = [
     name: 'Telegram',
     url: 'https://telegram.me/febley',
     icon: 'fab fa-telegram-plane'
+  },
+  {
+    name: 'PlayStation',
+    url: 'https://psnprofiles.com/febLey',
+    icon: 'fab fa-playstation'
+  },
+  {
+    name: 'Xbox',
+    url: 'https://exophase.com/xbox/user/febLey/',
+    icon: 'fab fa-xbox'
+  },
+  {
+    name: 'Steam',
+    url: 'https://steamcommunity.com/id/febLey',
+    icon: 'fab fa-steam'
   }
 ]
 
