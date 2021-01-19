@@ -12,11 +12,6 @@ const channels = [
     icon: 'fab fa-github-alt'
   },
   {
-    name: 'Instagram',
-    url: 'https://instagram.com/febley',
-    icon: 'fab fa-instagram'
-  },
-  {
     name: 'WaniKani',
     url: 'https://www.wanikani.com/users/febLey',
     icon: 'fas fa-language'
