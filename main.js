@@ -17,11 +17,6 @@ const channels = [
     icon: 'fab fa-instagram'
   },
   {
-    name: 'Telegram',
-    url: 'https://telegram.me/febley',
-    icon: 'fab fa-telegram-plane'
-  },
-  {
     name: 'WaniKani',
     url: 'https://www.wanikani.com/users/febLey',
     icon: 'fas fa-language'
