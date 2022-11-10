@@ -2,11 +2,6 @@ const Vue = window.Vue
 
 const channels = [
   {
-    name: 'Twitter',
-    url: 'https://twitter.com/febLey',
-    icon: 'fab fa-twitter'
-  },
-  {
     name: 'GitHub',
     url: 'https://github.com/febley',
     icon: 'fab fa-github-alt'
