@@ -2,6 +2,11 @@ const Vue = window.Vue
 
 const channels = [
   {
+    name: 'Discord',
+    url: 'https://discordapp.com/users/107618281535356928',
+    icon: 'fab fa-discord'
+  },
+  {
     name: 'GitHub',
     url: 'https://github.com/febley',
     icon: 'fab fa-github-alt'
