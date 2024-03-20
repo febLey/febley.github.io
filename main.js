@@ -17,19 +17,9 @@ const channels = [
     icon: 'fas fa-language'
   },
   {
-    name: 'PlayStation',
-    url: 'https://psnprofiles.com/febLey',
-    icon: 'fab fa-playstation'
-  },
-  {
     name: 'Steam',
     url: 'https://steamcommunity.com/id/febLey',
     icon: 'fab fa-steam'
-  },
-  {
-    name: 'Xbox',
-    url: 'https://exophase.com/xbox/user/febLey/',
-    icon: 'fab fa-xbox'
   }
 ]
 
