@@ -9,7 +9,7 @@ const channels = [
   {
     name: "Matrix",
     url: "https://matrix.to/#/@febley:matrix.org",
-    icon: "fab fa-comments",
+    icon: "fas fa-comments",
   },
   {
     name: "WaniKani",
